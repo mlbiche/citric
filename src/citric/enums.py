@@ -167,7 +167,12 @@ class UserStatus(enum.IntEnum):
 
 
 class QuestionType(StrEnum):
-    """Question type."""
+    """Question type as defined in LimeSurvey.
+
+    See https://github.com/LimeSurvey/LimeSurvey/blob/master/application/models/QuestionType.php
+
+    Some constant names have been updated for better comprehension.
+    """
 
     ARRAY_DUAL = "1"
     POINT_CHOICE = "5"
